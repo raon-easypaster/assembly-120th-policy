@@ -1,0 +1,1019 @@
+<title>제120년차 총회 정책자료집</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap">
+
+<style>
+:root {
+  --navy: #0F1E3A;
+  --navy-mid: #1C3260;
+  --navy-soft: #253A6A;
+  --amber: #C8872A;
+  --amber-light: #E9A84A;
+  --bg: #F3F1ED;
+  --bg-card: #FFFFFF;
+  --text: #18161E;
+  --text-muted: #58566A;
+  --text-faint: #8A88A0;
+  --border: #DDD9D2;
+  --border-soft: #EAE7E1;
+
+  --sol: #157680;
+  --sol-bg: #EAF5F7;
+  --sol-border: #C2E2E7;
+  --gen: #276B3C;
+  --gen-bg: #E9F5EE;
+  --gen-border: #C0DFC9;
+  --hol: #B85918;
+  --hol-bg: #FBF0E6;
+  --hol-border: #F0D0B0;
+  --cmp: #2244A0;
+  --cmp-bg: #EAF0FB;
+  --cmp-border: #C0D0F0;
+  --spr: #A02458;
+  --spr-bg: #FBE8F0;
+  --spr-border: #EEBCD6;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0B1628;
+    --bg-card: #131E38;
+    --text: #ECE9F4;
+    --text-muted: #9896B0;
+    --text-faint: #6A687E;
+    --border: #253050;
+    --border-soft: #1C2840;
+    --sol-bg: #0B2830;
+    --sol-border: #184860;
+    --gen-bg: #0B2018;
+    --gen-border: #184030;
+    --hol-bg: #281408;
+    --hol-border: #481C10;
+    --cmp-bg: #0B1838;
+    --cmp-border: #183060;
+    --spr-bg: #280B1A;
+    --spr-border: #480C30;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0B1628;
+  --bg-card: #131E38;
+  --text: #ECE9F4;
+  --text-muted: #9896B0;
+  --text-faint: #6A687E;
+  --border: #253050;
+  --border-soft: #1C2840;
+  --sol-bg: #0B2830;
+  --sol-border: #184860;
+  --gen-bg: #0B2018;
+  --gen-border: #184030;
+  --hol-bg: #281408;
+  --hol-border: #481C10;
+  --cmp-bg: #0B1838;
+  --cmp-border: #183060;
+  --spr-bg: #280B1A;
+  --spr-border: #480C30;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+/* ─── HERO ─────────────────────────────── */
+.hero {
+  background: var(--navy);
+  display: grid;
+  grid-template-columns: 45% 55%;
+  min-height: 85vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 40px;
+  position: relative;
+}
+
+.hero-120-wrap {
+  position: relative;
+}
+
+.hero-120 {
+  font-family: 'Noto Serif KR', serif;
+  font-size: clamp(140px, 18vw, 240px);
+  font-weight: 700;
+  color: var(--amber);
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-120-shadow {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  font-family: 'Noto Serif KR', serif;
+  font-size: clamp(140px, 18vw, 240px);
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(200,135,42,0.15);
+  z-index: 1;
+}
+
+.hero-tagline {
+  margin-top: 20px;
+  font-size: 12px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.35);
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 60px 80px 40px;
+  border-left: 1px solid rgba(255,255,255,0.06);
+}
+
+.hero-eyebrow {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hero-eyebrow::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 1px;
+  background: var(--amber);
+  opacity: 0.6;
+}
+
+.hero-title {
+  font-family: 'Noto Serif KR', serif;
+  font-size: clamp(26px, 3.2vw, 44px);
+  font-weight: 700;
+  line-height: 1.35;
+  color: #FFFFFF;
+  text-wrap: balance;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: clamp(13px, 1.4vw, 16px);
+  font-weight: 300;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.55);
+  border-left: 2px solid var(--amber);
+  padding-left: 16px;
+  margin-bottom: 40px;
+  text-wrap: balance;
+}
+
+.hero-divider {
+  width: 40px;
+  height: 1px;
+  background: rgba(255,255,255,0.12);
+  margin-bottom: 28px;
+}
+
+.hero-meta {
+  font-size: 12px;
+  color: rgba(255,255,255,0.35);
+  line-height: 1.9;
+}
+.hero-meta strong {
+  color: rgba(255,255,255,0.6);
+  font-weight: 500;
+}
+
+.hero-deco {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 0% 60%, rgba(200,135,42,0.04) 0%, transparent 55%);
+  pointer-events: none;
+}
+
+/* ─── STICKY NAV ─────────────────────────── */
+.cat-nav {
+  background: var(--navy);
+  border-top: 1px solid rgba(255,255,255,0.06);
+  position: sticky;
+  top: 0;
+  z-index: 200;
+}
+.cat-nav-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 0 32px;
+}
+.cat-nav-inner::-webkit-scrollbar { display: none; }
+.cat-nav a {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 13px 18px;
+  font-size: 11.5px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.45);
+  text-decoration: none;
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+  letter-spacing: 0.02em;
+}
+.cat-nav a:hover { color: rgba(255,255,255,0.85); }
+.dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ─── INTRO ─────────────────────────────── */
+.intro {
+  max-width: 860px;
+  margin: 72px auto;
+  padding: 0 40px;
+  text-align: center;
+}
+.section-eyebrow {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 20px;
+}
+.intro-quote {
+  font-family: 'Noto Serif KR', serif;
+  font-size: clamp(17px, 2.2vw, 24px);
+  font-weight: 400;
+  line-height: 1.85;
+  color: var(--text);
+  text-wrap: balance;
+  margin-bottom: 20px;
+}
+.intro-caption {
+  font-size: 13px;
+  color: var(--text-faint);
+  line-height: 1.7;
+}
+
+/* ─── 3 PILLARS ─────────────────────────── */
+.pillars {
+  background: var(--navy);
+  padding: 72px 40px;
+}
+.pillars-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.pillars-eyebrow {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--amber);
+  text-align: center;
+  margin-bottom: 48px;
+  opacity: 0.8;
+}
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid rgba(255,255,255,0.07);
+}
+.pillar {
+  padding: 40px 36px;
+  border-right: 1px solid rgba(255,255,255,0.07);
+  position: relative;
+  overflow: hidden;
+}
+.pillar:last-child { border-right: none; }
+.pillar-bg-num {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 120px;
+  font-weight: 700;
+  color: rgba(200,135,42,0.07);
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+.pillar-icon {
+  width: 36px;
+  height: 2px;
+  background: var(--amber);
+  margin-bottom: 24px;
+  opacity: 0.7;
+}
+.pillar-name {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 14px;
+  text-wrap: balance;
+  line-height: 1.4;
+  position: relative;
+  z-index: 1;
+}
+.pillar-desc {
+  font-size: 13px;
+  color: rgba(255,255,255,0.45);
+  line-height: 1.8;
+  position: relative;
+  z-index: 1;
+}
+
+/* ─── CATEGORY SECTION ───────────────────── */
+.cat-section { margin-bottom: 0; }
+
+.cat-header {
+  padding: 56px 40px 48px;
+}
+.cat-header-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 48px;
+  align-items: center;
+}
+.cat-label-wrap {}
+.cat-label {
+  font-family: 'Noto Serif KR', serif;
+  font-size: clamp(32px, 5vw, 60px);
+  font-weight: 700;
+  line-height: 1.15;
+  text-wrap: balance;
+}
+.cat-policy-count {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  margin-top: 8px;
+  opacity: 0.6;
+}
+.cat-intro {
+  font-size: 14.5px;
+  line-height: 1.85;
+  max-width: 580px;
+  opacity: 0.8;
+}
+
+/* ─── POLICY CARDS ───────────────────────── */
+.policies {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px 64px;
+}
+.policy-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-top: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+.policy-card:first-child { border-top: 1px solid var(--border); }
+.policy-card:hover { box-shadow: 0 4px 24px rgba(0,0,0,0.07); z-index: 1; }
+
+.policy-num-col {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 36px;
+  border-right: 1px solid var(--border-soft);
+  position: relative;
+  overflow: hidden;
+}
+.policy-num-bg {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 1;
+  position: absolute;
+  bottom: -10px;
+  left: -8px;
+  opacity: 0.06;
+  color: currentColor;
+  user-select: none;
+  pointer-events: none;
+  font-variant-numeric: tabular-nums;
+}
+.policy-num-display {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--text-faint);
+  position: relative;
+  z-index: 1;
+}
+
+.policy-body {
+  padding: 36px 48px 36px 40px;
+}
+.policy-cat-tag {
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 2px;
+  display: inline-block;
+  margin-bottom: 14px;
+}
+.policy-title {
+  font-family: 'Noto Serif KR', serif;
+  font-size: clamp(19px, 2.2vw, 26px);
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  text-wrap: balance;
+  color: var(--text);
+}
+.policy-subtitle {
+  font-size: 13px;
+  color: var(--text-faint);
+  margin-bottom: 18px;
+  font-style: italic;
+}
+.policy-desc {
+  font-size: 13.5px;
+  color: var(--text-muted);
+  line-height: 1.85;
+  max-width: 680px;
+  margin-bottom: 24px;
+}
+.policy-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+.policy-item {
+  font-size: 11.5px;
+  padding: 5px 11px;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  background: var(--bg);
+  border-radius: 2px;
+}
+.policy-foot {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border-soft);
+  font-size: 11.5px;
+  color: var(--text-faint);
+}
+.policy-foot-item { display: flex; gap: 5px; }
+.policy-foot-label { font-weight: 500; color: var(--text-muted); }
+
+/* ─── FOOTER ─────────────────────────────── */
+.footer {
+  background: var(--navy);
+  padding: 56px 40px;
+  text-align: center;
+}
+.footer-wordmark {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.75);
+  margin-bottom: 10px;
+}
+.footer-sub {
+  font-size: 12px;
+  color: rgba(255,255,255,0.3);
+  line-height: 1.9;
+}
+.footer-divider {
+  width: 32px;
+  height: 1px;
+  background: rgba(255,255,255,0.12);
+  margin: 20px auto;
+}
+
+/* ─── RESPONSIVE ─────────────────────────── */
+@media (max-width: 860px) {
+  .hero { grid-template-columns: 1fr; min-height: auto; }
+  .hero-left { padding: 56px 40px 24px; }
+  .hero-right { padding: 24px 40px 56px; border-left: none; border-top: 1px solid rgba(255,255,255,0.06); }
+  .pillars-grid { grid-template-columns: 1fr; }
+  .pillar { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.07); }
+  .pillar:last-child { border-bottom: none; }
+  .cat-header-inner { grid-template-columns: 1fr; gap: 16px; }
+  .policy-card { grid-template-columns: 80px 1fr; }
+  .policy-body { padding: 28px 28px 28px 24px; }
+}
+@media (max-width: 540px) {
+  .intro, .policies { padding: 0 20px; }
+  .cat-header { padding: 40px 20px 32px; }
+  .policy-card { grid-template-columns: 1fr; }
+  .policy-num-col { display: none; }
+  .policy-body { padding: 24px 20px; }
+  .pillars { padding: 56px 20px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
+</style>
+
+<!-- ══════════════════════════════════════ HERO -->
+<header class="hero">
+  <div class="hero-deco"></div>
+  <div class="hero-left">
+    <div class="hero-120-wrap">
+      <span class="hero-120">120</span>
+      <span class="hero-120-shadow" aria-hidden="true">120</span>
+      <p class="hero-tagline">年次 總會</p>
+    </div>
+  </div>
+  <div class="hero-right">
+    <p class="hero-eyebrow">기독교대한성결교회</p>
+    <h1 class="hero-title">제120년차 총회<br>정책 자료집</h1>
+    <p class="hero-subtitle">은총 속에 걸어온 120년,<br>함께 도약하는 성결교회</p>
+    <div class="hero-divider"></div>
+    <div class="hero-meta">
+      <strong>총회장</strong> 이기용 목사 (신길교회)<br>
+      <strong>슬로건</strong> 기억을 넘어 사명으로<br>
+      <strong>성경</strong> 이사야 60장 22절
+    </div>
+  </div>
+</header>
+
+<!-- ══════════════════════════════════════ STICKY NAV -->
+<nav class="cat-nav" aria-label="정책 카테고리 바로가기">
+  <div class="cat-nav-inner">
+    <a href="#solidarity"><span class="dot" style="background:var(--sol)"></span>연대와 공존</a>
+    <a href="#nextgen"><span class="dot" style="background:var(--gen)"></span>다음세대 교육</a>
+    <a href="#holiness"><span class="dot" style="background:var(--hol)"></span>성결 정체성</a>
+    <a href="#compete"><span class="dot" style="background:var(--cmp)"></span>교단 경쟁력</a>
+    <a href="#spirit"><span class="dot" style="background:var(--spr)"></span>성결 영성</a>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════ INTRO -->
+<section style="padding-top: 16px;">
+  <div class="intro">
+    <p class="section-eyebrow">제120년차 총회 정책자료집</p>
+    <p class="intro-quote">
+      교단 창립 120주년이 '기억을 넘어 사명으로' 교단의 눈부신 변화와 재도약의 출발선이 될 수 있도록,
+      10대 비전을 선정하고 이를 성취하기 위한 총력을 다하고자 합니다.
+    </p>
+    <p class="intro-caption">
+      1907년 정빈·김상준 두 청년의 복음 열정으로 시작된 기독교대한성결교회 — 창립 120주년을 맞아 새로운 도약의 비전을 제시합니다.
+    </p>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════ 3 PILLARS -->
+<section class="pillars">
+  <div class="pillars-inner">
+    <p class="pillars-eyebrow">120주년 3대 정책 기조</p>
+    <div class="pillars-grid">
+      <div class="pillar">
+        <span class="pillar-bg-num" aria-hidden="true">1</span>
+        <div class="pillar-icon"></div>
+        <h2 class="pillar-name">위로의 축제, 120주년</h2>
+        <p class="pillar-desc">빼앗기고 잃어버린 모든 것이 회복되는 희년(禧年)의 심정으로, 120주년 기념 120개 교회 리모델링 및 재활성화 사업을 추진합니다. 수고하고 헌신한 비전교회들의 아픔을 닦아주며 위로하는 축제의 시간.</p>
+      </div>
+      <div class="pillar">
+        <span class="pillar-bg-num" aria-hidden="true">2</span>
+        <div class="pillar-icon"></div>
+        <h2 class="pillar-name">회복과 각성의 축제, 120주년</h2>
+        <p class="pillar-desc">역사의 변곡점이 되는 시점에서 가장 뜨거운 교단이었던 정체성을 회복합니다. 성결의 능력으로 시원케 되는 은혜를 체험할 수 있는 교회로 회복될 때, 부흥은 저절로 따라오게 될 것입니다.</p>
+      </div>
+      <div class="pillar">
+        <span class="pillar-bg-num" aria-hidden="true">3</span>
+        <div class="pillar-icon"></div>
+        <h2 class="pillar-name">비전 실행과 시스템 혁신의 축제, 120주년</h2>
+        <p class="pillar-desc">비전은 구호가 아닙니다. 비전은 실행력이며, 디테일의 동반이 필수적이고, 정책과 시스템을 통한 열정의 열매입니다. 총회와 지교회가 연대하고 공존하는 패러다임의 전향적 변화가 필요합니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════ CAT 1: 연대와 공존 -->
+<section class="cat-section" id="solidarity">
+  <div class="cat-header" style="background:var(--sol-bg); border-top: 3px solid var(--sol); border-bottom: 1px solid var(--sol-border); color: var(--sol);">
+    <div class="cat-header-inner">
+      <div class="cat-label-wrap">
+        <div class="cat-label" style="color:var(--sol);">연대와<br>공존</div>
+        <p class="cat-policy-count" style="color:var(--sol);">POLICY 1–2</p>
+      </div>
+      <p class="cat-intro" style="color:var(--text-muted);">
+        우리 교단은 하나의 '교회'임을 천명합니다. 모든 교회는 분절되지 않고, 그리스도의 심장을 공유하고 성령 안에서 호흡하는 온전한 몸입니다. 큰 교회는 작은 교회를 섬기고, 도시와 농어촌의 교회가 사랑의 씨실과 섬김의 날실로 연결되는 '성결 가족 공동체'를 만들어 나갑니다.
+      </p>
+    </div>
+  </div>
+
+  <div class="policies">
+    <!-- Policy 1 -->
+    <div class="policy-card">
+      <div class="policy-num-col" style="background:var(--sol-bg); color:var(--sol);">
+        <span class="policy-num-bg" aria-hidden="true">1</span>
+        <span class="policy-num-display">No.01</span>
+      </div>
+      <div class="policy-body">
+        <span class="policy-cat-tag" style="background:var(--sol-bg); color:var(--sol); border: 1px solid var(--sol-border);">연대와 공존</span>
+        <h2 class="policy-title">동반성장특별위원회</h2>
+        <p class="policy-subtitle">120주년 기념 120교회 리모델링 및 재활성화 프로젝트</p>
+        <p class="policy-desc">
+          '80교회 리모델링 및 재활성화 프로젝트'가 교단 창립 120주년을 맞아 '120교회 리모델링 및 재활성화 프로젝트'로 확장됩니다. 교회 간 연대와 동반 성장의 가치를 실현하기 위해 동반 성장 특별위원회를 조직하고, 지속 가능한 자립 기반 조성을 위한 실질적인 사업을 전개합니다.
+        </p>
+        <div class="policy-items">
+          <span class="policy-item">120교회 리모델링·재활성화 (1교회당 2천만원)</span>
+          <span class="policy-item">사업 진행 관리 및 후속 조치</span>
+          <span class="policy-item">동반 성장 정책 마련</span>
+          <span class="policy-item">건강한 교회 성장 시스템 개발</span>
+          <span class="policy-item">농·어촌 교회 연대 공존 모색</span>
+        </div>
+        <div class="policy-foot">
+          <div class="policy-foot-item"><span class="policy-foot-label">사업기간</span><span>2년 (2026년 6월 시작)</span></div>
+          <div class="policy-foot-item"><span class="policy-foot-label">조직</span><span>위원장 1명, 서기 1명, 위원 13명</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Policy 2 -->
+    <div class="policy-card">
+      <div class="policy-num-col" style="background:var(--sol-bg); color:var(--sol);">
+        <span class="policy-num-bg" aria-hidden="true">2</span>
+        <span class="policy-num-display">No.02</span>
+      </div>
+      <div class="policy-body">
+        <span class="policy-cat-tag" style="background:var(--sol-bg); color:var(--sol); border: 1px solid var(--sol-border);">연대와 공존</span>
+        <h2 class="policy-title">목회자 및 선교사 복지 시스템 구축</h2>
+        <p class="policy-desc">
+          목회자와 선교사의 사역 안정망을 구축하는 일은 시혜적 복지가 아닙니다. 교단의 영속성을 담보하고 사역의 동력을 유지하기 위한 필수적 인프라입니다. '돌봄과 연대'라는 성경적 원리를 총회적 제도로 온전히 구현합니다.
+        </p>
+        <div class="policy-items">
+          <span class="policy-item">목회자 재교육 시스템 구축</span>
+          <span class="policy-item">안식월 제도 법제화</span>
+          <span class="policy-item">교단 연금 가입 기회 확대</span>
+          <span class="policy-item">국민연금 가입 지원</span>
+          <span class="policy-item">안정적 은퇴 보장 시스템 제도화</span>
+        </div>
+        <div class="policy-foot">
+          <div class="policy-foot-item"><span class="policy-foot-label">목적</span><span>목회 역동성 확보 · 사역 안전망 확충 · 은퇴 지속성 보장</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════ CAT 2: 다음세대 -->
+<section class="cat-section" id="nextgen">
+  <div class="cat-header" style="background:var(--gen-bg); border-top: 3px solid var(--gen); border-bottom: 1px solid var(--gen-border); color: var(--gen);">
+    <div class="cat-header-inner">
+      <div class="cat-label-wrap">
+        <div class="cat-label" style="color:var(--gen);">다음세대<br>부흥을 위한<br>교육 컨텐츠</div>
+        <p class="cat-policy-count" style="color:var(--gen);">POLICY 3–5</p>
+      </div>
+      <p class="cat-intro" style="color:var(--text-muted);">
+        우리는 지금 거대한 시대적 위기의 한복판에 서 있습니다. 그러나 이런 극단적인 위기의 심연에서 우리가 다시금 확증하게 되는 유일한 해답은 결국 '사람'입니다. 거룩한 복음의 가치를 가슴에 품은 건강한 그리스도인 한 사람을 바로 세우는 일이야말로, 흔들리는 교회의 기초를 수축하고 본연의 사명을 완수하는 가장 확실한 원동력입니다.
+      </p>
+    </div>
+  </div>
+
+  <div class="policies">
+    <!-- Policy 3 -->
+    <div class="policy-card">
+      <div class="policy-num-col" style="background:var(--gen-bg); color:var(--gen);">
+        <span class="policy-num-bg" aria-hidden="true">3</span>
+        <span class="policy-num-display">No.03</span>
+      </div>
+      <div class="policy-body">
+        <span class="policy-cat-tag" style="background:var(--gen-bg); color:var(--gen); border: 1px solid var(--gen-border);">다음세대 교육</span>
+        <h2 class="policy-title">교회학교 디지털 교재 개발 특별위원회</h2>
+        <p class="policy-desc">
+          다음 세대는 영상으로 세상을 인지하고, 스마트폰으로 소통하는 '디지털 네이티브(Digital Native) 세대'입니다. 그러나 그들을 양육하는 교회 교육 교재는 여전히 아날로그 문법과 형식에 지체되어 있습니다. VR·AR 기술과 고품질 영상 콘텐츠가 결합된 '멀티미디어 중심의 디지털 공과 시스템'을 개발하여 보급합니다.
+        </p>
+        <div class="policy-items">
+          <span class="policy-item">신앙의 세대 간 계승 교육 시스템 구축</span>
+          <span class="policy-item">멀티미디어 스마트 공과 시스템 개발</span>
+          <span class="policy-item">AI·스마트폰 기반 교육 플랫폼 구축</span>
+          <span class="policy-item">주 7일 신앙 교육 플랫폼</span>
+        </div>
+        <div class="policy-foot">
+          <div class="policy-foot-item"><span class="policy-foot-label">사업기간</span><span>3년</span></div>
+          <div class="policy-foot-item"><span class="policy-foot-label">조직</span><span>특별위원장 1명, 서기 1명, 위원 13명 (목사 7, 장로 6)</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Policy 4 -->
+    <div class="policy-card">
+      <div class="policy-num-col" style="background:var(--gen-bg); color:var(--gen);">
+        <span class="policy-num-bg" aria-hidden="true">4</span>
+        <span class="policy-num-display">No.04</span>
+      </div>
+      <div class="policy-body">
+        <span class="policy-cat-tag" style="background:var(--gen-bg); color:var(--gen); border: 1px solid var(--gen-border);">다음세대 교육</span>
+        <h2 class="policy-title">성결사관학교</h2>
+        <p class="policy-desc">
+          교단의 미래는 결국 '사람'에게 달려 있습니다. 성결사관학교를 통해 잠재력 있는 청소년과 청년을 조기에 발굴하여 그들의 전공과 은사별로 분류하고, 교단의 주요 프로젝트에 참여할 기회를 제공하는 등 이 시대의 지도자로 양성합니다. 탁월한 목회적 역량이나 전문성을 갖춘 목회자들을 선발하여 심화 교육과 해외 연수, 정책 연구 등의 기회를 제공합니다.
+        </p>
+        <div class="policy-items">
+          <span class="policy-item">청소년·청년 우수 인재 조기 발굴</span>
+          <span class="policy-item">우수 목회자 선발 및 심화 교육</span>
+          <span class="policy-item">차세대 리더군 육성</span>
+          <span class="policy-item">해외 연수 커리큘럼 개발</span>
+          <span class="policy-item">후보자 선발 및 멘토단 구성</span>
+        </div>
+        <div class="policy-foot">
+          <div class="policy-foot-item"><span class="policy-foot-label">사업기간</span><span>10년</span></div>
+          <div class="policy-foot-item"><span class="policy-foot-label">조직</span><span>이사장, 후원이사회, 운영이사회, 멘토단</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Policy 5 -->
+    <div class="policy-card">
+      <div class="policy-num-col" style="background:var(--gen-bg); color:var(--gen);">
+        <span class="policy-num-bg" aria-hidden="true">5</span>
+        <span class="policy-num-display">No.05</span>
+      </div>
+      <div class="policy-body">
+        <span class="policy-cat-tag" style="background:var(--gen-bg); color:var(--gen); border: 1px solid var(--gen-border);">다음세대 교육</span>
+        <h2 class="policy-title">평신도 교육사 시스템 및 컨텐츠 개발</h2>
+        <p class="policy-desc">
+          전국 시·군·구의 약 50% 이상이 소멸 위험 지역에 진입했으며, 지방 교회의 약 60~70%가 주일학교를 운영하지 못하는 교회학교 공동화 현상이 심화되고 있습니다. 교단 내 우수한 평신도 자원을 발굴하여, 총회 인준 '평신도 교육사'의 자격을 부여하여 '전문 사역자'로 사역할 수 있는 길을 열겠습니다.
+        </p>
+        <div class="policy-items">
+          <span class="policy-item">교회학교 공동화 대응 방안 모색</span>
+          <span class="policy-item">교역자 수급 불균형 해소</span>
+          <span class="policy-item">우수 평신도 자원 발굴 및 신학 훈련</span>
+          <span class="policy-item">서울신학대학교·지역 신학교 교수진 활용</span>
+          <span class="policy-item">온라인 교육 콘텐츠 개발 및 보급</span>
+        </div>
+        <div class="policy-foot">
+          <div class="policy-foot-item"><span class="policy-foot-label">사업기간</span><span>1년 이상</span></div>
+          <div class="policy-foot-item"><span class="policy-foot-label">조직</span><span>위원장, 서기, 위원 7명 (목사 4, 장로 3)</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════ CAT 3: 성결 정체성 -->
+<section class="cat-section" id="holiness">
+  <div class="cat-header" style="background:var(--hol-bg); border-top: 3px solid var(--hol); border-bottom: 1px solid var(--hol-border); color: var(--hol);">
+    <div class="cat-header-inner">
+      <div class="cat-label-wrap">
+        <div class="cat-label" style="color:var(--hol);">성결<br>정체성</div>
+        <p class="cat-policy-count" style="color:var(--hol);">POLICY 6–7</p>
+      </div>
+      <p class="cat-intro" style="color:var(--text-muted);">
+        세상은 이제 더 이상 교회의 화려함에 감동하지 않습니다. 세상은 그리스도인의 삶을 통해 그리스도를 읽고, 교회는 성결의 능력을 통해 세상을 치유합니다. 우리가 가진 '성결'의 가치는 교회 안에 박제된 유산이 아니라 고통받는 세상을 치유하고 회복시키는 능력이 되어야 합니다.
+      </p>
+    </div>
+  </div>
+
+  <div class="policies">
+    <!-- Policy 6 -->
+    <div class="policy-card">
+      <div class="policy-num-col" style="background:var(--hol-bg); color:var(--hol);">
+        <span class="policy-num-bg" aria-hidden="true">6</span>
+        <span class="policy-num-display">No.06</span>
+      </div>
+      <div class="policy-body">
+        <span class="policy-cat-tag" style="background:var(--hol-bg); color:var(--hol); border: 1px solid var(--hol-border);">성결 정체성</span>
+        <h2 class="policy-title">성결교회 역사성 뿌리 찾기 및 정체성 교육</h2>
+        <p class="policy-desc">
+          우리 성결교회는 '웨슬레안 복음주의 사중복음'에 뿌리를 두고 있습니다. 웨슬레의 회심을 중심으로 성결 신앙의 태동이 된 영국과 교회 부흥의 진원지로 세계를 향해 성결 복음이 전파된 만국성결운동의 중심인 미국, 그리고 정빈·김상준 신앙의 선각자들이 성결 신앙을 공부한 일본의 동경성서학원을 찾아 쇼츠를 제작하여 보급합니다.
+        </p>
+        <div class="policy-items">
+          <span class="policy-item">'웨슬레안 복음주의 사중복음' 정체성 확립 및 교육</span>
+          <span class="policy-item">영국·미국·일본 방문 쇼츠 제작·보급</span>
+          <span class="policy-item">전 성결교인 대상 정체성 교육</span>
+          <span class="policy-item">감상문 공모·시상</span>
+        </div>
+        <div class="policy-foot">
+          <div class="policy-foot-item"><span class="policy-foot-label">방문 일정</span><span>2027년 3월 29일 ~ 4월 17일 (영국→미국→일본)</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Policy 7 -->
+    <div class="policy-card">
+      <div class="policy-num-col" style="background:var(--hol-bg); color:var(--hol);">
+        <span class="policy-num-bg" aria-hidden="true">7</span>
+        <span class="policy-num-display">No.07</span>
+      </div>
+      <div class="policy-body">
+        <span class="policy-cat-tag" style="background:var(--hol-bg); color:var(--hol); border: 1px solid var(--hol-border);">성결 정체성</span>
+        <h2 class="policy-title">교단 신학 필수 교과서 발간</h2>
+        <p class="policy-desc">
+          신학은 교단의 울타리와도 같습니다. 하나의 신학이 하나의 교단을 만듭니다. 현재 구약신학을 비롯하여 신약, 조직, 교회사, 실천, 기독교윤리학, 선교학, 기독교교육과 기독교 세계관까지 9과목의 서울신학대학교 교수님들이 우리 교단의 신학을 집대성한 교과서 집필에 열중하고 있습니다.
+        </p>
+        <div class="policy-items">
+          <span class="policy-item">구약신학</span>
+          <span class="policy-item">신약신학</span>
+          <span class="policy-item">조직신학</span>
+          <span class="policy-item">교회사</span>
+          <span class="policy-item">실천신학</span>
+          <span class="policy-item">기독교윤리학</span>
+          <span class="policy-item">선교학</span>
+          <span class="policy-item">기독교교육</span>
+          <span class="policy-item">기독교 세계관</span>
+        </div>
+        <div class="policy-foot">
+          <div class="policy-foot-item"><span class="policy-foot-label">기간</span><span>1년</span></div>
+          <div class="policy-foot-item"><span class="policy-foot-label">과목</span><span>총 9과목 · 서울신학대학교 및 지방신학교 공통 수업</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════ CAT 4: 교단 경쟁력 -->
+<section class="cat-section" id="compete">
+  <div class="cat-header" style="background:var(--cmp-bg); border-top: 3px solid var(--cmp); border-bottom: 1px solid var(--cmp-border); color: var(--cmp);">
+    <div class="cat-header-inner">
+      <div class="cat-label-wrap">
+        <div class="cat-label" style="color:var(--cmp);">교단의<br>경쟁력 강화<br>및 브랜드화</div>
+        <p class="cat-policy-count" style="color:var(--cmp);">POLICY 8–9</p>
+      </div>
+      <p class="cat-intro" style="color:var(--text-muted);">
+        지금 한국 교회는 기술 문명의 발달과 세속화라는 거센 저항에 직면해 있습니다. 이제 우리는 변화를 넘어 초격차의 경쟁력을 확보해야 합니다. 우리 교단이 다시 한국 교회의 중심에 설 수 있도록 교단의 브랜드 가치를 높여 나가야 합니다.
+      </p>
+    </div>
+  </div>
+
+  <div class="policies">
+    <!-- Policy 8 -->
+    <div class="policy-card">
+      <div class="policy-num-col" style="background:var(--cmp-bg); color:var(--cmp);">
+        <span class="policy-num-bg" aria-hidden="true">8</span>
+        <span class="policy-num-display">No.08</span>
+      </div>
+      <div class="policy-body">
+        <span class="policy-cat-tag" style="background:var(--cmp-bg); color:var(--cmp); border: 1px solid var(--cmp-border);">교단 경쟁력</span>
+        <h2 class="policy-title">성결교회의 세계화 및 총회 서비스 행정</h2>
+        <p class="policy-desc">
+          내부의 혁신과 '사중복음 신학의 세계적인 표준'을 확립하고, 해외 선교지 총회를 교단 행정에 편입하는 등 글로벌 네트워크를 강화하여 교단의 세계화를 이루어 내겠습니다. 행정은 사역의 길을 닦는 마중물이자 지교회 목회를 돕는 최상의 도구가 되어야 합니다. '디지털 스마트 행정'을 구현하고 '서비스 행정 시스템'을 구축하겠습니다.
+        </p>
+        <div class="policy-items">
+          <span class="policy-item">사중복음 신학 세계적 표준 확립</span>
+          <span class="policy-item">해외 선교지 총회 교단 행정 편입</span>
+          <span class="policy-item">글로벌 네트워크 강화</span>
+          <span class="policy-item">디지털 스마트 행정 구현</span>
+          <span class="policy-item">지교회 서비스 행정 시스템 구축</span>
+        </div>
+        <div class="policy-foot">
+          <div class="policy-foot-item"><span class="policy-foot-label">방향</span><span>데이터 기반 적재적소 배치 · 법적 분쟁 예방 정교한 행정 구현</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Policy 9 -->
+    <div class="policy-card">
+      <div class="policy-num-col" style="background:var(--cmp-bg); color:var(--cmp);">
+        <span class="policy-num-bg" aria-hidden="true">9</span>
+        <span class="policy-num-display">No.09</span>
+      </div>
+      <div class="policy-body">
+        <span class="policy-cat-tag" style="background:var(--cmp-bg); color:var(--cmp); border: 1px solid var(--cmp-border);">교단 경쟁력</span>
+        <h2 class="policy-title">헌법 및 제규정의 전면 개정 특별위원회</h2>
+        <p class="policy-desc">
+          교단의 헌법은 복음의 가치를 수호하면서 동시에 시대의 변화를 포용할 수 있도록 정합성을 확보하는 방향으로 개정되어야 합니다. 동시에 목회자와 선교사의 목회 사역의 안정성을 보장하여 역동적인 목회의 가능성을 보장해 주어야 합니다. '헌법 및 제규정의 전면적인 개정을 위한 특별위원회'를 구성합니다.
+        </p>
+        <div class="policy-items">
+          <span class="policy-item">교단 경쟁력 제고 및 위상 강화</span>
+          <span class="policy-item">교회 생존 능력 향상 및 지속 성장 동력 확보</span>
+          <span class="policy-item">법리적 매몰 지양·현장 중심 실용적 입법</span>
+          <span class="policy-item">능동적·진취적 리더십 체계 구축</span>
+          <span class="policy-item">창립 120주년 골든타임 사수</span>
+        </div>
+        <div class="policy-foot">
+          <div class="policy-foot-item"><span class="policy-foot-label">기간</span><span>1년</span></div>
+          <div class="policy-foot-item"><span class="policy-foot-label">조직</span><span>위원장·서기 각 1명, 자문위원 7명, 개정위원 13명</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════ CAT 5: 성결 영성 -->
+<section class="cat-section" id="spirit">
+  <div class="cat-header" style="background:var(--spr-bg); border-top: 3px solid var(--spr); border-bottom: 1px solid var(--spr-border); color: var(--spr);">
+    <div class="cat-header-inner">
+      <div class="cat-label-wrap">
+        <div class="cat-label" style="color:var(--spr);">성결<br>영성<br>회복 운동</div>
+        <p class="cat-policy-count" style="color:var(--spr);">POLICY 10</p>
+      </div>
+      <p class="cat-intro" style="color:var(--text-muted);">
+        우리 성결교회의 태동은 뜨거웠습니다. 복소리와 함께 울려 퍼졌던 전도의 외침, 밤을 지새우며 부르짖던 열정적인 기도는 교단의 야성적 신앙의 태동이자 우리를 지탱해 온 거룩한 신앙의 유산이었습니다. 이제 우리의 뜨겁게 부르짖던 신앙의 열정을 회복해야 할 때입니다.
+      </p>
+    </div>
+  </div>
+
+  <div class="policies">
+    <!-- Policy 10 -->
+    <div class="policy-card">
+      <div class="policy-num-col" style="background:var(--spr-bg); color:var(--spr);">
+        <span class="policy-num-bg" aria-hidden="true">10</span>
+        <span class="policy-num-display">No.10</span>
+      </div>
+      <div class="policy-body">
+        <span class="policy-cat-tag" style="background:var(--spr-bg); color:var(--spr); border: 1px solid var(--spr-border);">성결 영성</span>
+        <h2 class="policy-title">120주년 기념식 및 목사·장로 부부 기도 컨퍼런스</h2>
+        <p class="policy-desc">
+          교단 창립 120주년은 단순한 기념일이 아니라 이 땅에 성결교단을 세우신 우리 하나님의 뜻과 초기 창립자들의 복음에 대한 열망을 회복하고 의지를 다지는 결단의 시간이 되어야 합니다. 교단의 영적 리더인 목사·장로 부부들이 한자리에 모여, 1907년 오로지 복음 전도에 대한 열망으로 뜨겁게 기도하던 그날의 결기로 하나가 되는 시간을 갖고자 합니다.
+        </p>
+        <div class="policy-items">
+          <span class="policy-item">교단 창립 120주년 기념 예배 및 기도회</span>
+          <span class="policy-item">목사·장로 부부 기도 모범 회복</span>
+          <span class="policy-item">각 지역 교회로 기도의 불길 확산</span>
+          <span class="policy-item">성결영성운동 불꽃 점화</span>
+        </div>
+        <div class="policy-foot">
+          <div class="policy-foot-item"><span class="policy-foot-label">일시</span><span>2026년 10월 5일(월)~6일(화) · 1박 2일</span></div>
+          <div class="policy-foot-item"><span class="policy-foot-label">장소</span><span>신길교회</span></div>
+          <div class="policy-foot-item"><span class="policy-foot-label">대상</span><span>목사·장로 부부</span></div>
+        </div>
+
+        <!-- 지역 성회 일정 -->
+        <div style="margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--border-soft);">
+          <p style="font-size: 11px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-faint); margin-bottom: 14px;">지역 성결 영성 성회 일정</p>
+          <div style="overflow-x: auto; -webkit-overflow-scrolling: touch;">
+            <table style="font-size: 12px; border-collapse: collapse; min-width: 540px; width: 100%;">
+              <thead>
+                <tr style="background: var(--bg);">
+                  <th style="padding: 8px 12px; text-align: left; font-weight: 600; color: var(--text-muted); border-bottom: 1px solid var(--border); letter-spacing: 0.04em; font-size: 11px;">권역</th>
+                  <th style="padding: 8px 12px; text-align: left; font-weight: 600; color: var(--text-muted); border-bottom: 1px solid var(--border); letter-spacing: 0.04em; font-size: 11px;">지역</th>
+                  <th style="padding: 8px 12px; text-align: left; font-weight: 600; color: var(--text-muted); border-bottom: 1px solid var(--border); letter-spacing: 0.04em; font-size: 11px;">기간</th>
+                  <th style="padding: 8px 12px; text-align: left; font-weight: 600; color: var(--text-muted); border-bottom: 1px solid var(--border); letter-spacing: 0.04em; font-size: 11px;">장소</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text-muted); font-variant-numeric: tabular-nums;">서울</td><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text);">서울</td><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text-muted); font-variant-numeric: tabular-nums;">10월 7일(수)~9일(금)</td><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text-muted);">신길</td></tr>
+                <tr><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text-muted);">경인</td><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text);">인천</td><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text-muted); font-variant-numeric: tabular-nums;">10월 7일(수)~9일(금)</td><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text-muted);">송현</td></tr>
+                <tr><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text-muted);" rowspan="2">중부</td><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text);">경기</td><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text-muted); font-variant-numeric: tabular-nums;">10월 7일(수)~9일(금)</td><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text-muted);">세한</td></tr>
+                <tr><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text);">강원</td><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text-muted); font-variant-numeric: tabular-nums;">10월 11일(일)~13일(화)</td><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text-muted);">춘천중앙</td></tr>
+                <tr><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text-muted);" rowspan="3">충청</td><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text);">대전</td><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text-muted); font-variant-numeric: tabular-nums;">10월 11일(일)~13일(화)</td><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text-muted);">대전</td></tr>
+                <tr><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text);">충북</td><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text-muted); font-variant-numeric: tabular-nums;">10월 11일(일)~13일(화)</td><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text-muted);">청주서문</td></tr>
+                <tr><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text);">충남</td><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text-muted); font-variant-numeric: tabular-nums;">10월 14일(수)~16일(금)</td><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text-muted);">서산</td></tr>
+                <tr><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text-muted);" rowspan="2">호남</td><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text);">전북</td><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text-muted); font-variant-numeric: tabular-nums;">10월 14일(수)~16일(금)</td><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text-muted);">바울</td></tr>
+                <tr><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text);">전남·광주</td><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text-muted); font-variant-numeric: tabular-nums;">10월 14일(수)~16일(금)</td><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text-muted);">복교동</td></tr>
+                <tr><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text-muted);" rowspan="3">영남</td><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text);">경북·대구</td><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text-muted); font-variant-numeric: tabular-nums;">10월 18일(일)~20일(화)</td><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text-muted);">포항</td></tr>
+                <tr><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text);">경남</td><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text-muted); font-variant-numeric: tabular-nums;">10월 18일(일)~20일(화)</td><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text-muted);">김해</td></tr>
+                <tr><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text);">부산·울산</td><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text-muted); font-variant-numeric: tabular-nums;">10월 18일(일)~20일(화)</td><td style="padding: 7px 12px; border-bottom: 1px solid var(--border-soft); color: var(--text-muted);">대연</td></tr>
+                <tr><td style="padding: 7px 12px; color: var(--text-muted);">제주</td><td style="padding: 7px 12px; color: var(--text);">제주</td><td style="padding: 7px 12px; color: var(--text-muted); font-variant-numeric: tabular-nums;">10월 21일(수)~23일(금)</td><td style="padding: 7px 12px; color: var(--text-muted);">제주</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════ FOOTER -->
+<footer class="footer">
+  <p class="footer-wordmark">기독교대한성결교회</p>
+  <div class="footer-divider"></div>
+  <p class="footer-sub">
+    제120년차 총회 정책자료집<br>
+    총회장 이기용 목사 · 2026년 5월 27일<br>
+    "그 작은 자가 천 명을 이루겠고 그 약한 자가 강국을 이룰 것이라 때가 되면 나 여호와가 속히 이루리라" (이사야 60:22)
+  </p>
+</footer>
