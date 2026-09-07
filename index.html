@@ -12,63 +12,43 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap">
 
 <style>
+/* 항상 라이트 모드 고정 */
 :root {
-  --navy: #162C52;
-  --navy-mid: #1E3A6A;
-  --amber: #E09030;
-  --bg: #F9F7F3;
+  color-scheme: light;
+  --navy: #1A3568;
+  --navy-mid: #2348A0;
+  --amber: #E8960C;
+  --bg: #FFFFFF;
   --bg-card: #FFFFFF;
-  --text: #18161E;
-  --text-muted: #58566A;
-  --text-faint: #8A88A0;
-  --border: #E0DCD4;
-  --border-soft: #EEEAE3;
+  --bg-subtle: #F8FAFC;
+  --text: #111827;
+  --text-muted: #4B5563;
+  --text-faint: #9CA3AF;
+  --border: #E5E7EB;
+  --border-soft: #F3F4F6;
 
-  --sol: #0E98AE;
-  --sol-bg: #E6F7FA;
-  --sol-border: #B0E0EA;
-  --gen: #259650;
-  --gen-bg: #E6F7EE;
-  --gen-border: #A8DFC0;
-  --hol: #D46520;
-  --hol-bg: #FDF2E6;
-  --hol-border: #F2C898;
-  --cmp: #2A5CC8;
-  --cmp-bg: #EAF0FD;
-  --cmp-border: #AACCF4;
-  --spr: #C02872;
-  --spr-bg: #FCE8F3;
-  --spr-border: #F0B0D4;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #0B1628; --bg-card: #131E38;
-    --text: #ECE9F4; --text-muted: #9896B0; --text-faint: #6A687E;
-    --border: #253050; --border-soft: #1C2840;
-    --sol-bg: #0B2830; --sol-border: #184860;
-    --gen-bg: #0B2018; --gen-border: #184030;
-    --hol-bg: #281408; --hol-border: #481C10;
-    --cmp-bg: #0B1838; --cmp-border: #183060;
-    --spr-bg: #280B1A; --spr-border: #480C30;
-  }
-}
-:root[data-theme="dark"] {
-  --bg: #0B1628; --bg-card: #131E38;
-  --text: #ECE9F4; --text-muted: #9896B0; --text-faint: #6A687E;
-  --border: #253050; --border-soft: #1C2840;
-  --sol-bg: #0B2830; --sol-border: #184860;
-  --gen-bg: #0B2018; --gen-border: #184030;
-  --hol-bg: #281408; --hol-border: #481C10;
-  --cmp-bg: #0B1838; --cmp-border: #183060;
-  --spr-bg: #280B1A; --spr-border: #480C30;
+  --sol: #0891B2;
+  --sol-bg: #ECFEFF;
+  --sol-border: #A5F3FC;
+  --gen: #16A34A;
+  --gen-bg: #F0FDF4;
+  --gen-border: #86EFAC;
+  --hol: #EA6C00;
+  --hol-bg: #FFF7ED;
+  --hol-border: #FED7AA;
+  --cmp: #2563EB;
+  --cmp-bg: #EFF6FF;
+  --cmp-border: #BFDBFE;
+  --spr: #DB2777;
+  --spr-bg: #FDF2F8;
+  --spr-border: #FBCFE8;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; color-scheme: light; }
 body {
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', system-ui, sans-serif;
-  background: var(--bg);
+  background: #FFFFFF;
   color: var(--text);
   line-height: 1.7;
   font-size: 15px;
@@ -170,19 +150,21 @@ body {
   margin-bottom: 16px;
 }
 .stat-row {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px;
-  background: var(--border); border: 1px solid var(--border);
-  margin: 32px 0;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 0;
+  border: 1.5px solid var(--border);
+  margin: 32px 0; border-radius: 4px; overflow: hidden;
 }
 .stat-cell {
-  background: var(--bg-card); padding: 24px 20px; text-align: center;
+  background: #FFFFFF; padding: 28px 20px; text-align: center;
+  border-right: 1.5px solid var(--border);
 }
+.stat-cell:last-child { border-right: none; }
 .stat-num {
-  font-family: 'Noto Serif KR', serif; font-size: 26px; font-weight: 700;
+  font-family: 'Noto Serif KR', serif; font-size: 28px; font-weight: 700;
   color: var(--navy); font-variant-numeric: tabular-nums; line-height: 1.2;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
-.stat-label { font-size: 12px; color: var(--text-faint); line-height: 1.5; }
+.stat-label { font-size: 12px; color: var(--text-faint); line-height: 1.6; }
 
 /* PILLARS */
 .pillars { background: var(--navy); padding: 72px 40px; }
@@ -304,7 +286,7 @@ body {
 .data-table th {
   padding: 8px 12px; text-align: left; font-weight: 600; color: var(--text-muted);
   border-bottom: 1px solid var(--border); font-size: 10.5px; letter-spacing: 0.04em;
-  background: var(--bg);
+  background: #F8FAFC;
 }
 .data-table td {
   padding: 7px 12px; border-bottom: 1px solid var(--border-soft);
@@ -312,7 +294,7 @@ body {
 }
 .data-table td.td-primary { color: var(--text); }
 .data-table tr:last-child td { border-bottom: none; }
-.data-table tr:nth-child(even) td { background: var(--bg); }
+.data-table tr:nth-child(even) td { background: #FAFAFA; }
 
 /* Objective cards */
 .obj-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 4px; }
